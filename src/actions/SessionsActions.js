@@ -13,15 +13,14 @@ export const postLogin = (data) => {
 }
 
 export const signOut = () => {
-    console.log('aca')
+  
     return {
         type: 'CLEAR_ALL',
     };
 }
 
 export const fetchData = (data) => {
-    console.log('ACTIONS')
-    console.log(data.headers)
+ 
     return async dispatch => { 
         const response = await API.get(`/TutenREST/rest/user/contacto%40tuten.cl/bookings?email=${data.email}&current=${data.current}`,{headers:data.headers});
         dispatch({

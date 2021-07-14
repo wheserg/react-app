@@ -112,10 +112,7 @@ function Dashboard(props){
    
     const handleBusqueda = () => {
         let newListaDatos = []
-        actualizaEstado({
-            listaDatosAuxiliar:myState.listaDatos,
-        
-        })
+ 
         if(filtroBusqueda != '1'){// no es un LIKE%
             //es menor igual o mayor igual
            
@@ -126,7 +123,7 @@ function Dashboard(props){
                         if(parseInt(busqueda) <= parseInt(value.bookingPrice)){
                             newListaDatos.push(value);
                         }
-                    }else if(campo == 'BookingId'){
+                    }else if(campo == 'Bookingid'){
                         if(parseInt(busqueda) <= parseInt(value.bookingId)){
                             newListaDatos.push(value);
                         }
@@ -144,7 +141,7 @@ function Dashboard(props){
                         if(parseInt(busqueda) >= parseInt(value.bookingPrice)){
                             newListaDatos.push(value);
                         }
-                    }else if(campo == 'BookingId'){
+                    }else if(campo == 'Bookingid'){
                         if(parseInt(busqueda) >= parseInt(value.bookingId)){
                             newListaDatos.push(value);
                         }
