@@ -37,3 +37,33 @@
     transform: translateY(0px);
   }
 }
+
+.contenedorApp{
+  height:120vh;
+  max-height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  
+
+}
+.contenedorInicio{
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  
+
+}
